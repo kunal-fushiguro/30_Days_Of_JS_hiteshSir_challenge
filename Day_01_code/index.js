@@ -56,6 +56,7 @@ const age = 30;
 const isStudent = true;
 const salary = 1234n;
 const person = { name: "Alice", age: 25 };
+const langauge = ["English", "Hindi"];
 console.log("\n\n");
 
 console.log(`Name: ${name} (Type: ${typeof name})`);
@@ -63,6 +64,9 @@ console.log(`Age: ${age} (Type: ${typeof age})`);
 console.log(`Is Student: ${isStudent} (Type: ${typeof isStudent})`);
 console.log(`Salary: ${salary} (Type: ${typeof salary})`);
 console.log(`Person: ${JSON.stringify(person)} (Type: ${typeof person})`);
+console.log(
+  `Language : ${langauge[0]} and  ${langauge[1]} (Type : ${typeof langauge})`
+);
 
 // 2 :
 
