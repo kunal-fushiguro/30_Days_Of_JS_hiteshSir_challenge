@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Checker</title>
+  </head>
+  <body>
+    <p>Enter a number: <input type="number" id="userNumber" /></p>
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+
+    <script>
+      function checkNumber() {
+        const inputNumber = parseFloat(
+          document.getElementById("userNumber").value
+        );
+        const result =
+          inputNumber >= 0
+            ? inputNumber === 0
+              ? "zero"
+              : "positive"
+            : "negative";
+        document.getElementById(
+          "result"
+        ).textContent = `The number is ${result}.`;
+      }
+    </script>
+  </body>
+</html>
